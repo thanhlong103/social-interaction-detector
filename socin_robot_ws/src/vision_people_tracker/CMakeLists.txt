@@ -32,16 +32,9 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
-install(DIRECTORY launch model
-  DESTINATION share/${PROJECT_NAME}
-)
 
 install(
   PROGRAMS
-  src/augment.py
-  src/HAR.py
-  src/moveNet.py
-  src/process.py
   src/vision_people_tracker.py
   DESTINATION lib/${PROJECT_NAME}
 )
